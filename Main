@@ -10,6 +10,11 @@ end
 function CX()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end
+
+function AR()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/NPwf5R4Q'),true))()
+end
+
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -24,6 +29,12 @@ local AdminTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+    local FeTab = Window:MakeTab({
+        Name = "FE",
+        Icon = "rbxassetid://12099772154",
+        PremiumOnly = false
+})
+
 -- Labels
 
 NewsTab:AddLabel("Released!")
@@ -36,6 +47,15 @@ AdminTab:AddButton({
       		IY()
   	end    
 })
+
+FeTab:AddButton({
+	Name = "Assault Rifle",
+	Callback = function()
+      		AR()
+  	end    
+})
+
+FeTab:AddParagraph("Required Hats:","Spec Ops CR-L 4 [Back] , Elemental Crystal Golem - Shoulder Rock")
 
 AdminTab:AddButton({
 	Name = "CMD-X",
