@@ -1,0 +1,50 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "WolfHub", HidePremium = false,IntroText = 'WolfHub' , SaveConfig = true, ConfigFolder = "OrionTest"})
+
+-- Functions
+
+function IY()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
+end
+
+function CX()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end
+-- Tabs
+
+local NewsTab = Window:MakeTab({
+	Name = "News",
+	Icon = "rbxassetid://12099300467",
+	PremiumOnly = false
+})
+
+local AdminTab = Window:MakeTab({
+	Name = "Admin",
+	Icon = "rbxassetid://12099369330",
+	PremiumOnly = false
+})
+
+-- Labels
+
+NewsTab:AddLabel("Released!")
+
+-- Buttons
+
+AdminTab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		IY()
+  	end    
+})
+
+AdminTab:AddButton({
+	Name = "CMD-X",
+	Callback = function()
+      		CX()
+  	end    
+})
+
+
+
+
+OrionLib:Init()
