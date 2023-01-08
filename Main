@@ -18,6 +18,10 @@ end
 function AU()
     loadstring(game:HttpGet('https://pastebin.com/raw/7eCVjmjC'))()
 end
+
+function LSGame()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zu0aX/Life-Sentence/main/Main"))()
+end
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -44,6 +48,12 @@ local FeTab = Window:MakeTab({
         PremiumOnly = false
 })
 
+local GamesTab = Window:MakeTab({
+    Name = "Games",
+    Icon = "rbxassetid://12100066268",
+    PremiumOnly = false
+})
+
 -- Labels
 
 NewsTab:AddLabel("Released!")
@@ -68,6 +78,13 @@ FeHatTab:AddButton({
 	Name = "Assault Rifle",
 	Callback = function()
       		AR()
+  	end    
+})
+
+GamesTab:AddButton({
+	Name = "Life Sentence",
+	Callback = function()
+      		LSGame()
   	end    
 })
 
