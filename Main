@@ -22,6 +22,10 @@ end
 function LSGame()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Zu0aX/Life-Sentence/main/Main"))()
 end
+
+function CGame()
+	loadstring(game:HttpGet("https://pastebin.com/raw/0Xxtfktr"))()
+end
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -85,6 +89,13 @@ GamesTab:AddButton({
 	Name = "Life Sentence",
 	Callback = function()
       		LSGame()
+  	end    
+})
+
+GamesTab:AddButton({
+	Name = "Criminality",
+	Callback = function()
+      		CGame()
   	end    
 })
 
