@@ -26,6 +26,10 @@ end
 function CGame()
 	loadstring(game:HttpGet("https://pastebin.com/raw/0Xxtfktr"))()
 end
+
+function BestHub()
+	loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))()
+end
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -55,6 +59,12 @@ local FeTab = Window:MakeTab({
 local GamesTab = Window:MakeTab({
     Name = "Games",
     Icon = "rbxassetid://12100066268",
+    PremiumOnly = false
+})
+
+local HubsTab = Window:MakeTab({
+    Name = "Hubs",
+    Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
@@ -105,6 +115,13 @@ AdminTab:AddButton({
 	Name = "CMD-X",
 	Callback = function()
       		CX()
+  	end    
+})
+
+HubsTab:AddButton({
+	Name = "Chiezzy Hub",
+	Callback = function()
+      		BestHub()
   	end    
 })
 
