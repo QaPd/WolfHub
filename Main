@@ -30,6 +30,10 @@ end
 function BestHub()
 	loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))()
 end
+
+function Surv()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/qxkya/Kya-Ware/main/TheSurvivalGame.lua"))()
+end
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -127,6 +131,12 @@ HubsTab:AddButton({
   	end    
 })
 
+GamesTab:AddButton({
+	Name = "Survival Games",
+	Callback = function()
+      		Surv()
+  	end    
+})
 
 
 
