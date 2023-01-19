@@ -34,43 +34,45 @@ end
 
 local NewsTab = Window:MakeTab({
 	Name = "News",
-	Icon = "rbxassetid://12099300467",
+	Icon = "rbxassetid://12099300378",
 	PremiumOnly = false
 })
 
 local AdminTab = Window:MakeTab({
 	Name = "Admin",
-	Icon = "rbxassetid://12099369330",
+	Icon = "rbxassetid://12099369296",
 	PremiumOnly = false
 })
 
 local FeTab = Window:MakeTab({
 	Name = "FE",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://12206746557",
 	PremiumOnly = false
 })
 
     local FeHatTab = Window:MakeTab({
         Name = "FE: Hats",
-        Icon = "rbxassetid://12099772154",
+        Icon = "rbxassetid://12099772102",
         PremiumOnly = false
 })
 
 local GamesTab = Window:MakeTab({
     Name = "Games",
-    Icon = "rbxassetid://12100066268",
+    Icon = "rbxassetid://12100066225",
     PremiumOnly = false
 })
 
 local HubsTab = Window:MakeTab({
     Name = "Hubs",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://12206755952",
     PremiumOnly = false
 })
 
 -- Labels
 
 NewsTab:AddLabel("Released!")
+
+NewsTab:AddLabel("Added Images To Tabs")
 
 -- Buttons
 
