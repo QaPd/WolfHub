@@ -42,6 +42,10 @@ end
 function Septex()
 	loadstring(game:HttpGet(('https://septex.xyz/ProjectSeptex.txt'),true))()
 end
+
+function Oak()
+	loadstring(game:HttpGet("https://www.soggy-ware.cf/beta/Oaklands.lua"))()
+end
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -160,6 +164,12 @@ GamesTab:AddButton({
   	end    
 })
 
+GamesTab:AddButton({
+	Name = "Oaklands",
+	Callback = function()
+      		Oak()
+  	end    
+})
 
 
 OrionLib:Init()
