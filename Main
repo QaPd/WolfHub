@@ -46,6 +46,24 @@ end
 function Oak()
 	loadstring(game:HttpGet("https://www.soggy-ware.cf/beta/Oaklands.lua"))()
 end
+
+function Islands()
+	loadstring(game:HttpGet('https://scripts.luawl.com/12802/IslandsScriptFREE.lua'))()
+end
+
+function UniversalFE()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+end
+
+function WOW()
+	loadstring(game:HttpGet("https://pastebin.com/raw/geUZHr7B"))()
+end
+
+function Sonic()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/SyF5t70A"))()
+end
+
+
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -171,5 +189,32 @@ GamesTab:AddButton({
   	end    
 })
 
+GamesTab:AddButton({
+	Name = "Islands",
+	Callback = function()
+      		Islands()
+  	end    
+})
+
+HubsTab:AddButton({
+	Name = "Universal FE",
+	Callback = function()
+      		UniversalFE()
+  	end    
+})
+
+FETab:AddButton({
+	Name = "Walk On Walls",
+	Callback = function()
+      		WOW()
+  	end    
+})
+
+FETab:AddButton({
+	Name = "Sonic",
+	Callback = function()
+      		Sonic()
+  	end    
+})
 
 OrionLib:Init()
