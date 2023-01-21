@@ -124,6 +124,20 @@ FeTab:AddButton({
   	end    
 })
 
+FeTab:AddButton({
+	Name = "Walk On Walls",
+	Callback = function()
+      		WOW()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Sonic",
+	Callback = function()
+      		Sonic()
+  	end    
+})
+
 FeHatTab:AddButton({
 	Name = "Assault Rifle",
 	Callback = function()
@@ -203,18 +217,7 @@ HubsTab:AddButton({
   	end    
 })
 
-FeTab:AddButton({
-	Name = "Walk On Walls",
-	Callback = function()
-      		WOW()
-  	end    
-})
 
-FeTab:AddButton({
-	Name = "Sonic",
-	Callback = function()
-      		Sonic()
-  	end    
-})
+
 
 OrionLib:Init()
