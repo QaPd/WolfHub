@@ -34,6 +34,14 @@ end
 function Surv()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/qxkya/Kya-Ware/main/TheSurvivalGame.lua"))()
 end
+
+function LT2()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/butter-hub/main/key.txt'))()
+end
+
+function Septex()
+	loadstring(game:HttpGet(('https://septex.xyz/ProjectSeptex.txt'),true))()
+end
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -135,6 +143,20 @@ GamesTab:AddButton({
 	Name = "Survival Games",
 	Callback = function()
       		Surv()
+  	end    
+})
+
+GamesTab:AddButton({
+	Name = "Lumber Tycoon 2",
+	Callback = function()
+      		LT2()
+  	end    
+})
+
+GamesTab:AddButton({
+	Name = "Prison Life",
+	Callback = function()
+      		Septex()
   	end    
 })
 
