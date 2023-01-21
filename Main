@@ -203,14 +203,14 @@ HubsTab:AddButton({
   	end    
 })
 
-FETab:AddButton({
+FeTab:AddButton({
 	Name = "Walk On Walls",
 	Callback = function()
       		WOW()
   	end    
 })
 
-FETab:AddButton({
+FeTab:AddButton({
 	Name = "Sonic",
 	Callback = function()
       		Sonic()
