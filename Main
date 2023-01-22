@@ -63,6 +63,9 @@ function Sonic()
 	loadstring(game:HttpGetAsync("https://pastebin.com/raw/SyF5t70A"))()
 end
 
+function Oak2()
+	loadstring(game:HttpGet("https://rawscripts.net/raw/Oaklands-Ore-esp-8480"))()
+end
 
 -- Tabs
 
@@ -217,7 +220,12 @@ HubsTab:AddButton({
   	end    
 })
 
-
+GamesTab:AddButton({
+	Name = "Oaklands Ore ESP",
+	Callback = function()
+      		Oak2()
+  	end    
+})
 
 
 OrionLib:Init()
