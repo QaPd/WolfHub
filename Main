@@ -84,6 +84,10 @@ end
 function PL()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/h17s3/TIGERADMIN/main/TIGERADMINSCRIPTFREE'),true))()
 end
+
+function MM2()
+	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -269,6 +273,13 @@ GamesTab:AddButton({
 	Name = "Prison Life Tiger Admin",
 	Callback = function()
       		PL()
+  	end    
+})
+
+GamesTab:AddButton({
+	Name = "Murder Mystery 2",
+	Callback = function()
+      		MM2()
   	end    
 })
 
