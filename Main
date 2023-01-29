@@ -80,6 +80,10 @@ end
 function Steep()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Amenteso/robloxscripts/main/Key.lua",true))()
 end
+
+function PL()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/h17s3/TIGERADMIN/main/TIGERADMINSCRIPTFREE'),true))()
+end
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -258,6 +262,13 @@ GamesTab:AddButton({
 	Name = "Steep Steps",
 	Callback = function()
       		Steep()
+  	end    
+})
+
+GamesTab:AddButton({
+	Name = "Prison Life Tiger Admin",
+	Callback = function()
+      		PL()
   	end    
 })
 
