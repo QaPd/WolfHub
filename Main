@@ -77,6 +77,9 @@ _G.Method = 1 -- 1 for the new method, 2 for the emoji method. If not defined, i
 loadstring(game:HttpGet("https://raw.githubusercontent.com/synnyyy/synergy/additional/betterbypasser",true))()
 end
 
+function Steep()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Amenteso/robloxscripts/main/Key.lua",true))()
+end
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -248,6 +251,13 @@ FeTab:AddButton({
 	Name = "Chat Bypass",
 	Callback = function()
       		Bypass()
+  	end    
+})
+
+GamesTab:AddButton({
+	Name = "Steep Steps",
+	Callback = function()
+      		Steep()
   	end    
 })
 
