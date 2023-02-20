@@ -93,9 +93,7 @@ function West()
 	loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/Exunys/westbound.pro-Utilites/main/Main.lua"))()
 end
 
-function ESP1()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ArcherDevelopment/LUNAESP/main/lunaesp.lua"))()
-end
+
 -- Tabs
 
 local NewsTab = Window:MakeTab({
@@ -298,12 +296,7 @@ GamesTab:AddButton({
   	end    
 })
 
-FeTab:AddButton({
-	Name = "ESP"
-	Callback = function()
-		ESP1()
-	end
-})
+
 
 
 OrionLib:Init()
